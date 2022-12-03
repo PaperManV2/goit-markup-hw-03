@@ -6,6 +6,7 @@
   --background-color-dark: #2f303a;
   --portfolio-gallery-border-color: #eeeeee;
   --crue-gallery-color: #f5f4fa;
+  --line-color: #ececec;
 }
 
 * {
@@ -26,15 +27,10 @@ body {
   color: var(--body-font-color);
 }
 
-.docCapacity {
-  width: 1200px;
-  margin: auto;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
-}
-
 .footer {
   background-color: var(--background-color-dark);
   color: var(--footer-Studio-text-color);
+  height: 252px;
 }
 
 .blueText {
@@ -71,8 +67,24 @@ body {
   color: var(--body-font-color);
 }
 
-.listItemProps .portfolioBtns {
+.portfolioBtn1,
+.portfolioBtn5 {
   width: 121px;
+  height: 38px;
+}
+
+.portfolioBtn2 {
+  width: 93px;
+  height: 38px;
+}
+
+.portfolioBtn3 {
+  width: 114px;
+  height: 38px;
+}
+
+.portfolioBtn4 {
+  width: 91px;
   height: 38px;
 }
 
@@ -90,6 +102,10 @@ body {
 }
 .bigAD {
   background-color: var(--background-color-dark);
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bigAD .bigADBtn {
@@ -109,6 +125,8 @@ body {
   border: 1px solid var(--portfolio-gallery-border-color);
   width: 370px;
   height: 404;
+  display: flex;
+  flex-direction: column;
 }
 
 .aLink {
@@ -122,7 +140,7 @@ body {
   line-height: 1.19;
   color: var(--body-font-color);
   text-decoration: none;
-  padding-left: 100px;
+  margin-left: 215px;
 }
 
 .footerLogoTextProps {
@@ -134,6 +152,24 @@ body {
   text-decoration: none;
 }
 
+.photoGallery {
+  width: 1170px;
+  height: 386px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.listOfWorkPhotos {
+  display: flex;
+  gap: 30px;
+  padding: 0px;
+}
+
 .photoGallery .galleriesTitle {
   font-weight: 700;
   font-size: 2.25rem;
@@ -141,6 +177,27 @@ body {
 
 .photoGalleryOfCrue {
   background-color: var(--crue-gallery-color);
+  height: 648px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoGalleryOfCrue .listOfCruePhotos {
+  display: flex;
+  gap: 30px;
+  padding: 0px;
+}
+
+.photoGalleryOfCrue .cruePictureDescriptionProps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 368px;
+  gap: 30px;
+  padding-bottom: 30px;
 }
 
 .photoGalleryOfCrue .galleriesTitle {
@@ -165,6 +222,7 @@ body {
   font-size: 0.875rem;
   line-height: 1.71;
   color: var(--gray-text);
+  flex-wrap: wrap;
 }
 
 .galleryDescription .galleryDescriptionTitle {
@@ -179,6 +237,7 @@ body {
   font-size: 1rem;
   color: var(--gray-text);
   line-height: 1.88;
+  text-align: center;
 }
 
 .listItemProps .aLink {
@@ -189,22 +248,138 @@ body {
 
 .container {
   width: 1200px;
+  margin: 0 auto;
+}
+
+.bigADDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
 .header {
+  width: 1600px;
+  padding-top: 0px;
   display: flex;
   align-items: center;
   height: 80px;
+  margin: 0 auto;
 }
 
-.navContainer ul {
+.navContainer .listOfNavBtns {
   display: flex;
-  gap: 40px;
+  gap: 46px;
   width: 254px;
   margin: 0px;
-  padding-left: 100px;
-  padding-right: 230px;
+  margin-left: 93px;
+  margin-right: 371px;
+  padding: 0px;
 }
+
 .phoneNumberAlignment {
-  padding-left: 50px;
+  margin-left: 50px;
+  margin-right: 227px;
+  padding: 0px;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.teamPros {
+  width: 1170px;
+  height: 101px;
+  padding: 94px 215px 94px 215px;
+  margin: 0 auto;
+}
+
+.teamPros .listItemProps {
+  width: 260px;
+  height: auto;
+}
+
+.teamPros .listOfTeamPros {
+  padding: 0px;
+  display: flex;
+  gap: 30px;
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 20px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 81px;
+}
+.listOfCategoryBtns {
+  display: flex;
+  gap: 8px;
+  height: 54px;
+  margin-bottom: 4px;
+  padding: 0px;
+}
+
+.portfoliogalleryMenu {
+  margin-top: 94px;
+}
+
+.portfoliogalleryMenu .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  height: 1360px;
+  gap: 30px;
+  margin-bottom: 94px;
+}
+
+.portfolioGalleryFirstRow {
+  padding: 0px;
+  display: flex;
+  gap: 30px;
+}
+
+.portfolioGallerySecondRow {
+  padding: 0px;
+  display: flex;
+  gap: 30px;
+}
+
+.portfolioGalleryThirdRow {
+  padding: 0px;
+  display: flex;
+  gap: 30px;
+}
+
+.portfolioGalleryFirstRow .listItemProps .portfolioGalleryItems,
+.portfolioGallerySecondRow .listItemProps .portfolioGalleryItems,
+.portfolioGalleryThirdRow .listItemProps .portfolioGalleryItems {
+  width: 370px;
+  height: 404px;
+}
+
+.line {
+  width: auto;
+  height: 0px;
+  border: 1px solid var(--line-color);
+}
+
+.portfolioGalleryItems .galleryDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 322px;
+  height: 70px;
 }
